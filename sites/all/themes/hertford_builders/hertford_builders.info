@@ -1,0 +1,48 @@
+name = Hertford Builders
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/hertford-builders.normalize.css
+stylesheets[all][] = css/hertford-builders.hacks.css
+stylesheets[all][] = css/hertford-builders.styles.css
+stylesheets[all][] = css/hertford-builders.no-query.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/hertford-builders.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
+
+; ========================================
+; Layouts
+; ========================================
+layout[sidebar][stylesheets][all][] = css/layouts/sidebar/hbuild-sidebar.layout.css
+layout[home][stylesheets][all][] = css/layouts/home/hbuild-home.layout.css
+layout[contact][stylesheets][all][] = css/layouts/contact/hbuild-contact.layout.css
+
+; ========================================
+; Break points
+; ========================================
+
+breakpoints[small] = all and (min-width: 0px) and (max-width: 799px)
+breakpoints[narrow] = all and (min-width: 800px) and (max-width: 979px)
+breakpoints[medium] = all and (min-width: 980px) and (max-width: 1199px)
+breakpoints[wide] = all and (min-width: 1200px)

@@ -1,0 +1,162 @@
+@import "hertford-builders.styles"; //the following resources are already called in the ant-omega.styles.css
+//the following resources are already called in the think-omega.styles.css
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
+
+/* .contact-header {
+	min-height: 100px;
+} */
+
+.contact-intro {
+	padding-top: 60px;
+	text-align: center;
+
+	.contact-intro-wrapper {
+		padding: 30px 0;
+		margin: 0 5% 20px;
+
+
+		h1 {
+			color: #f1f1f1;
+			font-weight: normal;
+			font-size: 2em;
+		}
+
+		p {
+			color: #FF4400;
+			font-weight: normal;
+			font-size: 1.25em;
+		}
+	}
+}
+
+.l-page .pod-panel-contact {
+	margin:0;
+	padding: 50px 0;
+	background: #fff;
+	text-align: center;
+	clear: left;
+
+			h2 {
+			color: #000;
+			}
+
+			p {
+			color: #666;
+			padding-right: 1%;
+			padding-left: 1%; 
+			}
+}
+.contact-discuss {
+		@include clearfix;
+	
+
+		p.mb-no {
+			font-size: 1.75em;
+			font-weight: bold;
+			//width: 100%;
+		}
+		p.mb-no a {
+			font-size: 1.75em;
+			font-weight: normal;
+			text-decoration: none;
+			color: #ff4400;
+		}
+}
+
+#clientsidevalidation-webform-client-form-6-errors {
+	padding: 0;
+	float: none;
+	width: auto;
+	border: 0 none;
+
+	ul {
+	margin-left: 5%;
+
+		.error {
+			color: #ff0000;
+		}
+
+
+	}
+
+}
+
+
+@include breakpoint($tab) {
+
+		.contact-intro {
+		padding-top: 0;
+
+		.contact-intro-wrapper {
+			padding: 0;
+			margin: 0 15% 50px 15%;
+
+
+			h1 {
+				font-size: 3em;
+			}
+
+			p {
+				font-size: 1.9em;
+				color: #ff4400;
+			}
+		}
+	}
+
+
+
+	.l-content .webform-component--email {
+		clear: right;
+	}
+
+	.l-content .webform-component--notes {
+		clear: right;
+	}
+
+	.l-content .form-actions {
+		clear: right;
+	}
+
+	#clientsidevalidation-webform-client-form-6-errors {
+		margin: 20px 12.5%;
+		float: none;
+		width: auto;
+
+			ul {
+			margin-left: 0;
+
+			.error {
+				font-size: 20px;
+			}
+
+		}
+
+	}
+
+
+	.contact-discuss {
+
+		p.mb-no {
+		font-size: 30px;
+		}
+		p.mb-no a {
+		font-size: 30px;
+		}
+
+		.mb-no-info {
+			text-align: right;
+		}
+		.mb-no-info-alt {
+			text-align: left;
+		}
+		
+
+	}
+
+}

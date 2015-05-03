@@ -1,0 +1,311 @@
+@import "hertford-builders.styles"; //the following resources are already called in the ant-omega.styles.css
+//the following resources are already called in the think-omega.styles.css
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
+
+.l-header {
+	min-height: 100px;
+}
+
+.hp-intro {
+	height: 100px;
+}
+
+.hp-box {
+	min-height: 300px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-image: url("../../../images/home-page-images/hBuild_mb.jpg");
+	text-align: center;
+	position: relative;
+
+
+		.hp-info-holder {
+			padding: 20px 1.5%;
+			background-image: url("../../../images/hd-bg.png");
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+
+		h2 {
+			color: #f1f1f1;
+			font-weight: normal;
+			font-size: 2em;
+			//padding: 50px 0 0;
+			margin: 0;
+		}
+
+		p {
+			color: #f1f1f1;
+			font-weight: normal;
+			font-size: 1.5em;
+			padding: 20px 0 0;
+			margin: 0;
+
+		}
+	}
+
+}
+
+.l-page {
+			p {
+			color: #333;
+			}
+	}
+
+.l-page .pod-panel {
+	margin: 50px 2%;
+	padding: 0;
+	//background: #333;
+	border: 1px solid #333;
+	text-align: center;
+
+			h2 {
+			color: #fff;
+			}
+
+			p {
+			color: #999;
+			padding-right: 1%;
+			padding-left: 1%; 
+			}
+}
+
+.l-page .pod-panel-contact {
+	margin:0;
+	padding: 50px 0;
+	background: #fff;
+	text-align: center;
+	clear: left;
+
+			h2 {
+			color: #000;
+			}
+
+			p {
+			color: #666;
+			padding-right: 1%;
+			padding-left: 1%; 
+			}
+}
+.contact-discuss {
+		@include clearfix;
+	
+
+		p.mb-no {
+			font-size: 1.75em;
+			font-weight: bold;
+		}
+		p.mb-no a {
+			font-size: 1.75em;
+			font-weight: normal;
+			text-decoration: none;
+			color: #ff4400;
+		}
+
+
+}
+
+.who-we-are {
+		@include clearfix;
+		margin-top: 40px;
+	
+
+		p.who {
+			font-size: 1.25em;
+			font-weight: bold;
+		}
+		p.who-alt{
+			font-size: 1.0em;
+		}
+
+}
+
+.button_site_alt {
+		clear: both;
+}
+
+@include breakpoint($between) {
+
+	.hp-box {
+	min-height: 400px;
+	text-align: left;
+	background-image: url("../../../images/home-page-images/hBuild_tab.jpg");
+	}
+}
+
+
+@include breakpoint($tab) {
+
+	.hp-box {
+	min-height: 400px;
+	text-align: left;
+	background-image: url("../../../images/home-page-images/hBuild_tab.jpg");
+
+			.hp-info-holder {
+
+			h2 {
+				color: #f1f1f1;
+				font-weight: normal;
+				font-size: 2em;
+				margin: 0;
+			}
+
+			p {
+				color: #f1f1f1;
+				font-weight: normal;
+				font-size: 1.75em;
+				padding: 20px 0 0;
+				margin: 0;
+
+			}
+		}
+
+	}
+
+	.contact-discuss {
+
+		p.mb-no {
+		font-size: 30px;
+		}
+		p.mb-no a {
+		font-size: 30px;
+		}
+
+		.mb-no-info {
+			text-align: right;
+		}
+		.mb-no-info-alt {
+			text-align: left;
+		}
+		
+
+	}
+
+	.who-we-are {
+
+		p.who {
+		font-size: 20px;
+		}
+		p.who-alt {
+		font-size: 20px;
+		}
+
+		.who {
+			text-align: right;
+		}
+		.who-alt {
+			text-align: left;
+		}
+		
+
+	}
+
+}
+
+@include breakpoint($tabwide) {
+
+	.hp-box {
+	min-height: 400px;
+	text-align: left;
+	background-image: url("../../../images/home-page-images/hBuild_tabwide.jpg");
+
+	}
+
+	.l-page .pod-panel {
+	//min-height: 450px;
+	}
+
+	.l-page {
+				.pod-panel-1 {
+					margin-bottom: 0;
+					width: 96%;
+					height: auto;
+
+				}
+
+				.pod-panel-2 {
+					max-width: 47%;
+					margin-left: 2%;
+					margin-right: 0;
+					min-height: 345px;
+
+				}
+
+				.pod-panel-3 {
+					max-width: 47%;
+					margin-left: 0;
+					margin-right: 2%;
+					min-height: 345px;
+
+				}
+
+			}
+
+
+
+}
+
+@include breakpoint($desk) {
+
+	.hp-box {
+	min-height: 600px;
+	background-image: url("../../../images/home-page-images/hBuild_desk.jpg");
+	
+			.hp-info-holder {
+
+			h2 {
+				color: #f1f1f1;
+				font-weight: normal;
+				font-size: 3em;
+				margin: 0;
+			}
+
+			p {
+				color: #f1f1f1;
+				font-weight: normal;
+				font-size: 2em;
+				padding: 20px 0 0;
+				margin: 0;
+
+			}
+		}
+
+	}
+
+	.l-page .pod-panel {
+	margin: 50px 0;
+	min-height: 450px;
+	}
+
+	.l-page {
+
+		.pod-panel-1 {
+		margin-left: 2%;
+		max-width: 30.66666666666667%;
+		}
+
+		.pod-panel-2 {
+		margin-left: 2%;
+		max-width: 30.66666666666667%;
+		}
+	
+		.pod-panel-3 {
+		margin-right: 2%;
+		max-width: 30.66666666666667%;
+		}
+
+	}
+
+
+
+}

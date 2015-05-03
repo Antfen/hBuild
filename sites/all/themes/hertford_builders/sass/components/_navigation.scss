@@ -1,0 +1,210 @@
+.mean-container .mean-bar {
+		float: none; //Stops horizontal scroll bars appearing on mobile in Chrome!
+		position: absolute;
+		z-index: 1;
+		background-color: transparent;
+		right: 0;
+		width: 40%;
+
+	}
+.mean-container .mean-nav {
+		position: absolute;
+		background: none;
+		background-image: url("../../../images/hd-bg.png") !important;
+		
+		ul li a {
+			text-align: right;
+			border-top: none;
+		}
+
+	}
+
+
+
+.l-region--navigation {
+	width: 80%;
+	float: right;
+	position: relative;
+
+		.pane-system-main-menu {
+			float: right;
+
+			ul.menu {
+				@include clearfix;
+				border: 0px none;
+				list-style: outside none none;
+				text-align: left;
+				margin: 12px 0 0;
+				
+				li {
+					text-align: left;
+					display: block;
+					float: left;
+					margin-right: 30px;
+				}
+				li:last-child {
+					margin-right: 0px;
+				}
+
+				li a {
+					display: block;
+					text-transform: lowercase;
+					text-decoration: none;
+					font-size: 20px;
+					color: #FFF;
+					padding: 14px 0;
+				}
+				li a:hover {
+					display: block;
+					text-transform: lowercase;
+					text-decoration: none;
+					color: #999;
+				}
+
+		}
+	}
+
+}
+
+
+.l-region--sidebar-first {
+
+			ul.menu {
+				border: 0px none;
+				list-style: outside none none;
+				text-align: left;
+				margin-top: 0;
+				margin-bottom: 0;
+				
+				li {
+					text-align: left;
+					display: block;
+				}
+
+				li:last-child{
+					padding-bottom: 14px;
+				}
+
+				li a {
+					display: block;
+					text-transform: lowercase;
+					text-decoration: none;
+					font-size: 22px;
+					color: #666;
+					padding: 10px 0 0;
+				}
+
+				li a:hover {
+					display: block;
+					text-transform: lowercase;
+					text-decoration: none;
+					color: #FF4400;
+				}
+
+		}
+
+}
+
+@include breakpoint($tab) {
+
+}
+
+
+
+.l-footer {
+
+	h2.pane-title {
+		display: block;
+		font-size: 18px;
+		color: #999;
+		border-bottom: 1px solid #999;
+	}
+
+	ul.menu {
+			@include clearfix;
+			border: 0px none;
+			list-style: outside none none;
+			text-align: left;
+			margin: 0 0 25px 0;
+			padding-left: 0;
+				
+				li {
+					text-align: left;
+					list-style: outside none none;
+				}
+
+				li a {
+					display: block;
+					text-transform: lowercase;
+					text-decoration: none;
+					font-size: 14px;
+					color: #999;
+					padding: 5px 0 0;
+				}
+				li a:hover {
+					display: block;
+					text-transform: lowercase;
+					text-decoration: none;
+					font-size: 14px;
+					color: #fff;
+				}
+		}
+
+}
+
+.l-footer {
+
+	ul.social-networks {
+    margin: 0;
+    padding: 0;
+    list-style: outside none none;
+
+			li.facebook {
+    		background: url("http://www.ecorhythm.com/sites/all/themes/omegaeco/social-networks/facebook.png") no-repeat scroll 0% 0% / 75% auto transparent;
+    		max-width: 175px;
+    		line-height: 40px;
+    		list-style: outside none none;
+    		}
+
+			li a {
+		    display: block;
+		    text-decoration: none;
+			}
+
+		}
+
+}
+
+
+
+@include breakpoint($tab) {
+
+	.l-footer {
+
+		ul.social-networks {
+    	margin: 0px;
+
+			li.facebook {
+    		width: 30%;
+    		line-height: 50px;
+    		}
+
+		}
+
+		.pane-menu-menu-footer {
+		@include clearfix;
+
+			h2.pane-title {
+			@include grid-span(3, 1); //sets it to 3 columns wide, that starts with the 1st column
+			}
+
+			ul.menu {
+			@include grid-span(3, 1); //sets it to 3 columns wide, that starts with the 1st column
+			clear: left;
+			
+			}
+		
+
+		}
+	}
+}

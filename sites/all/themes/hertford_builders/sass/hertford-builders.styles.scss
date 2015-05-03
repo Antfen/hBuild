@@ -1,0 +1,161 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/**/*";
+
+body {
+	
+}
+
+.pane-title {
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+.l-page {
+	margin: 0 auto;
+	background-color: #000;
+}
+
+.l-header {
+	@include clearfix;
+	background-color: transparent;
+	width: auto;
+	padding: 0px 2.5%;
+	height: 49px;
+	width: 100%;
+	background-image: url("../../../images/hd-bg.png");
+}
+.l-region--header {
+	width: 20%;
+	float: left;
+}
+
+#logo img {
+	width: 250px;
+	min-width: 200px;
+	z-index: 999;
+	margin: 20px 0 0;
+}
+
+.l-main {
+	width: 100%; //lets go full width and ajust the concepts page as required!
+	background-color: #000;
+}
+
+.l-footer {
+	@include clearfix;
+	width: 100%;
+	padding: 2.5% 2.5%;
+	background: #000;
+
+	.copyright {
+			@include clearfix;
+			float: right;
+			width: 40%;
+			text-align: right;
+			margin: 0;
+			padding-right: 0;
+
+				p {
+					color: #666;
+					font-size: 12px;
+				}
+
+		}
+
+	.snw {
+			float: left;
+			width: 40%;
+			text-align: left;
+			margin: 0;
+			padding-left: 0;
+			}
+
+			
+}
+
+@include breakpoint($tab) {
+		.l-header {
+		min-height: 100px;
+		}
+
+		.l-main {
+		margin-top: 0;
+		}
+
+		.l-footer {
+		padding: 7px 2.5%;
+		}
+}
+
+@include breakpoint($tabwide) {
+		.l-header {
+		min-height: 100px;
+		}
+
+		.l-main {
+		margin-top: 0;
+		}
+
+		.l-footer {
+		padding: 7px 2.5%;
+		}
+}
+
+@include breakpoint($desk) {
+		.l-header {
+		min-height: 100px;
+		}
+
+		.l-main {
+		margin-top: 0;
+		}
+
+		.l-footer {
+		padding: 7px 2.5%;
+		}
+}
+
+.l-page {
+
+	h2 {
+		font-size: 2.0em;
+		}
+
+	p {
+		font-size: 1.25em;
+		}
+	
+	@include breakpoint($tab) {
+
+		h2 {
+		font-size: 2.75em;
+		}
+
+		p {
+		font-size: 1.75em;
+		}
+	}
+
+	
+}
