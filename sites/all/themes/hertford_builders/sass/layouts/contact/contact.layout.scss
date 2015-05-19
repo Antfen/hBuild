@@ -44,15 +44,29 @@
 			@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
 		}
 
-
 		.mb-no-info {
-					@include grid-span(6, 1); //sets it to 6 columns wide, that starts with the 1st column
-
-				}
+			@include grid-span(6, 1); //sets it to 6 columns wide, that starts with the 1st column
+		}
 
 		.mb-no-info-alt {
 			@include grid-span(6, 7); //sets it to 6 columns wide, that starts with the 7th column
+		}
 
+		.mb-no-info {
+			@include grid-span(6, 1); //sets it to 6 columns wide, that starts with the 1st column
+			clear: left;
+		}
+
+		.mb-no-info-alt {
+			@include grid-span(6, 7); //sets it to 6 columns wide, that starts with the 7th column
+		}
+
+		.who {
+			@include grid-span(6, 1); //sets it to 6 columns wide, that starts with the 1st column
+		}
+
+		.who-alt {
+			@include grid-span(6, 7); //sets it to 6 columns wide, that starts with the 7th column
 		}
 
 

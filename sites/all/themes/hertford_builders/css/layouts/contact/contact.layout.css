@@ -506,22 +506,51 @@ body {
       margin-left: 0;
       margin-right: 0;
       clear: none; }
-    /* line 48, ../../../sass/layouts/contact/contact.layout.scss */
+    /* line 47, ../../../sass/layouts/contact/contact.layout.scss */
     .l-content .mb-no-info {
       width: 49.15254%;
       float: left;
       margin-right: -100%;
       margin-left: 0;
       clear: none; }
-    /* line 53, ../../../sass/layouts/contact/contact.layout.scss */
+    /* line 51, ../../../sass/layouts/contact/contact.layout.scss */
     .l-content .mb-no-info-alt {
+      width: 49.15254%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none; }
+    /* line 55, ../../../sass/layouts/contact/contact.layout.scss */
+    .l-content .mb-no-info {
+      width: 49.15254%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 0;
+      clear: none;
+      clear: left; }
+    /* line 60, ../../../sass/layouts/contact/contact.layout.scss */
+    .l-content .mb-no-info-alt {
+      width: 49.15254%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none; }
+    /* line 64, ../../../sass/layouts/contact/contact.layout.scss */
+    .l-content .who {
+      width: 49.15254%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 0;
+      clear: none; }
+    /* line 68, ../../../sass/layouts/contact/contact.layout.scss */
+    .l-content .who-alt {
       width: 49.15254%;
       float: right;
       margin-left: 0;
       margin-right: 0;
       clear: none; } }
 @media (min-width: 1120px) {
-  /* line 66, ../../../sass/layouts/contact/contact.layout.scss */
+  /* line 80, ../../../sass/layouts/contact/contact.layout.scss */
   .l-content {
     width: 100%;
     float: right;
