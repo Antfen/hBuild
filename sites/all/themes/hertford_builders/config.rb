@@ -8,8 +8,11 @@
 
 # Default to development if environment is not set.
 saved = environment
+
+#environment = :production
+
 if (environment.nil?)
-  environment = :development
+  environment = :production
 else
   environment = saved
 end
@@ -26,8 +29,8 @@ require 'compass-normalize'
 require 'rgbapng'
 require 'toolkit'
 require 'breakpoint'
-require 'singularitygs'
 require 'susy'
+require 'singularitygs'
 require 'sass-globbing'
 
 ##
@@ -43,5 +46,8 @@ output_style = (environment == :production) ? :expanded : :nested
 # the absolute path to the theme from the server omega.
 relative_assets = true
 
-# Output source maps in development mode.
-sass_options = (environment == :production) ? {} : {:sourcemap => true}
+# Conditionally enable line comments when in development mode.
+line_comments = (environment == :production) ? false : true
+
+# Output debugging info in development mode.
+sass_options = (environment == :production) ? {} : {:debug_info => true}
