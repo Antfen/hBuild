@@ -134,6 +134,10 @@
 		clear: both;
 }
 
+.content-hide {
+		display: none;
+}
+
 @include breakpoint($between) {
 
 	.hp-box {
