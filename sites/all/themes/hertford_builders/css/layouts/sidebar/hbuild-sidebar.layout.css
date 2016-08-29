@@ -463,6 +463,34 @@ body p, body ol, body ul, body ul li {
   }
 }
 
+/* Maintenance Mode */
+body.maintenance-page {
+  background-color: #000;
+}
+body.maintenance-page .l-header {
+  /* over writes site styles */
+  position: relative;
+  background-color: none;
+  background-image: none;
+  height: auto;
+  margin-top: 75px;
+}
+body.maintenance-page .l-content {
+  padding: 0px 2.5%;
+}
+body.maintenance-page h2.site-slogan {
+  color: #f40;
+}
+body.maintenance-page p {
+  color: #fff;
+}
+body.maintenance-page img {
+  width: auto;
+}
+body.maintenance-page h1.site-name {
+  display: none;
+}
+
 .l-region--sidebar-first {
   background: #f1f1f1;
   text-align: center;

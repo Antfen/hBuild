@@ -159,3 +159,43 @@ body {
 
 	
 }
+
+/* Maintenance Mode */
+
+body.maintenance-page {
+
+		background-color: #000;
+
+		.l-header { /* over writes site styles */
+			position: relative;
+			background-color: none;
+			background-image: none;
+			height: auto;
+			margin-top: 75px;
+		}
+
+		.l-content {
+			padding: 0px 2.5%;
+		}
+
+
+		h2.site-slogan {
+			color: #f40;
+		}
+
+		p {
+			color: #fff;
+		}
+			
+
+		img {
+			width: auto;
+		}
+
+		h1.site-name {
+			display: none;
+		}
+
+	
+
+}
